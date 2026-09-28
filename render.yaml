@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: n8n-automation
+    env: docker
+    plan: free
+    region: singapore
+    envVars:
+      - key: N8N_PORT
+        value: 5678
+      - key: WEBHOOK_URL
+        value: https://n8n-automation.onrender.com
